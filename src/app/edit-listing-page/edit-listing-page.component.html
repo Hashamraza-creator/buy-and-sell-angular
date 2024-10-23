@@ -1,1 +1,11 @@
-<p>edit-listing-page works!</p>
+<form (ngSubmit)="onSubmit(listing)">
+
+  <app-listing-data-form
+    [buttonText]="'Save Changes'"
+    [name]="listing.name"
+    [description]="listing.description"
+    [price]="listing.price"
+    (onSubmit)="onSubmit($event)">
+  </app-listing-data-form>
+
+</form>

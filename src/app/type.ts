@@ -1,8 +1,6 @@
 export interface Listing {
-id: String,
-name: String,
-description: String,
-price: number,
-
-
+  id: string;
+  name: string;
+  description: string;
+  price: number; // Change this to 'number' to match the data
 }
